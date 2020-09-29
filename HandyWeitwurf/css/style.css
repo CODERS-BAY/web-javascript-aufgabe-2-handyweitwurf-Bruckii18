@@ -1,0 +1,28 @@
+/* #container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  } */
+#phone {
+  top: 350px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+/* #monster {
+    top: 350px; 
+  } */
+#monster {
+  top: 400px;
+  height: 50px;
+  width: auto;
+  position: absolute;
+}
+
+body {
+  background-image: url(../img/universe_bg.jpg);
+  color: white;
+}
