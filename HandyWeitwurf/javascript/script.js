@@ -3,7 +3,7 @@ const EG = 9.81;
 const MOG = 1.62;
 const MAG = 3.69;
 const JG = 24.79;
-var g = 0;
+var g = EG;
 setMonster();
 
 
@@ -15,6 +15,11 @@ function setMonster() {
 }
 
 function myMove() {
+    //For the input of power. Only allows 10 - 90.
+    var power = document.getElementById("power").value;
+    //For the input of angle. Only allows 1 - 90.
+    var angle = document.getElementById("angle").value;
+    if (power != 0 && angle != 0) {
     var elem = document.getElementById("phone");
     var upPos = 350;
     var rightPos = 0;
@@ -25,16 +30,11 @@ function myMove() {
 
 
     //Userinputs
-
-    //For the input of power. Only allows 10 - 90.
-    var power = document.getElementById("power").value;
     if (document.getElementById("power").value > 90) {
         power = 90;
     } else if (document.getElementById("power").value < 10) {
         power = 10;
     }
-    //For the input of angle. Only allows 1 - 90.
-    var angle = document.getElementById("angle").value;
     if (document.getElementById("angle").value >= 90) {
         angle = 90;
     } else if (document.getElementById("angle").value <= 1) {
@@ -73,6 +73,10 @@ function myMove() {
         var goRight = posX * time;
         return goRight;
     }
+}
+else {
+    alert("Please put in Power and Angle!")
+}
 }
 //change the gravitation
 function setEarth() {

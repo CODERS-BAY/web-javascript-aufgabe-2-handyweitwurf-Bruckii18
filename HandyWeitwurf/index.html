@@ -2,23 +2,33 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <title>Handyweitwurf</title>
 </head>
 
 <body>
+    <main>
+        <article>
     <p>Power: (Put 10 - 90)</p><input type="text" name="power" id="power"> </br>
     <p>Angle: (Put 1 - 90)</p><input type="text" name="angle" id="angle">
+    </article>
+
+    <article>
     <button onclick="setEarth()" id="earth">Earth</button>
     <button onclick="setMoon()" id="moon">Moon</button>
     <button onclick="setMars()" id="mars">Mars</button>
     <button onclick="setJupiter()" id="jupiter">Jupiter</button>
-    <div>
-    <img onclick="myMove()" id="phone" src="img/phone.jpg" alt="phone">
-    </div>
-    <div >
-        <img id="monster" onclick="setMonster()" src="img/monster.png" alt="monster">
-    </div>
+    </article>
 
+    <article>
+    <img onclick="myMove()" id="phone" src="img/phone.jpg" alt="phone">
+    </article>
+
+    <article>
+        <img id="monster" onclick="setMonster()" src="img/monster.png" alt="monster">
+    </article>
+    </main>
     <script src="javascript/script.js"></script>
 </body>
 
